@@ -1,22 +1,9 @@
-[tool.poetry]
+[project]
 name = "hexlet-django-blog"
 version = "0.1.0"
-description = ""
-authors = ["akasmall <aka_sm@ro.ru>"]
+description = "Add your description here"
 readme = "README.md"
-
-packages = [
-  { include = "hexlet_django_blog" },
+requires-python = ">=3.12"
+dependencies = [
+    "django>=5.1.5",
 ]
-
-[tool.poetry.dependencies]
-python = "^3.10"
-django = "^5.1.4"
-
-
-[tool.poetry.group.dev.dependencies]
-uvicorn = "^0.33.0"
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
