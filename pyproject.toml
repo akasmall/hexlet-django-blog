@@ -4,6 +4,11 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
+
+package = [
+  { include = "hexlet_django_blog" },
+]
+
 dependencies = [
     "django>=5.1.5",
 ]
