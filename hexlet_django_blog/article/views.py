@@ -1,10 +1,11 @@
-# hexlet_django_blog/article/views.py
-from django.shortcuts import render
+from django.views.generic import TemplateView
 
 
-def index(request):
-    return render(
-        request,
-        'article/index.html',
-        context={'article': 'article'},
-    )
+class IndexViewArticle(TemplateView):
+
+    template_name = 'article/index.html'  # Указываем шаблон с полным путем
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['article'] = 'article'
+        return context
