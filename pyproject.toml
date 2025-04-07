@@ -16,6 +16,7 @@ dependencies = [
 
 [dependency-groups]
 dev = [
+    "ipython>=9.0.2",
     "pytest>=8.3.4",
     "ruff>=0.9.4",
     "uvicorn>=0.34.0",
