@@ -19,12 +19,13 @@ from django.urls import include, path
 
 from hexlet_django_blog import views
 # from hexlet_django_blog.views import IndexView
-from hexlet_django_blog.views import Index
+# from hexlet_django_blog.views import Index
 # from django.views.generic.base import RedirectView
 
 urlpatterns = [
-    path('', Index.as_view(), name='index'),
+    # path('', Index.as_view(), name='index'),
     # path('', views.index, name='home'),
+    path('', views.index, name='base'),
     # path('', RedirectView.as_view(url='/articles/python/42'), name='home'),
     path('about/', views.about),
     path('articles/', include('hexlet_django_blog.article.urls')),
